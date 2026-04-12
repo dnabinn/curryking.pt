@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curry King & Grill — Unlimited Indian Dining</title>
+    <meta name="description" content="Curry King & Grill — Premium unlimited Indian dining in Malaga. Order from your table. Freshly prepared. Served without limits.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ================================================
+         NAVIGATION
+    ================================================ -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#home" class="nav__logo">
+                <span>Curry King</span> <span class="nav__logo-amp">&amp;</span> <span>Grill</span>
+            </a>
+
+            <!-- Mobile hamburger -->
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Nav links -->
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#experience" class="nav__link">Experience</a></li>
+                <li><a href="#menu" class="nav__link">Cuisine</a></li>
+                <li><a href="#full-menu" class="nav__link">Full Menu</a></li>
+                <li><a href="#pricing" class="nav__link">Pricing</a></li>
+                <li><a href="#ambience" class="nav__link">Our Space</a></li>
+                <li><a href="#reservation" class="nav__cta">Reserve Table</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- ================================================
+         HERO SECTION
+    ================================================ -->
+    <section class="hero" id="home">
+        <!-- Background image with overlay -->
+        <div class="hero__bg">
+            <img
+                src="photos/DSC07465 (1) (1).jpg"
+                alt="Curry King & Grill interior — neon sign"
+                class="hero__img"
+                loading="eager"
+            >
+            <div class="hero__overlay"></div>
+        </div>
+
+        <!-- Hero content -->
+        <div class="hero__content">
+            <p class="hero__eyebrow">Malaga's Finest Indian Dining</p>
+
+            <h1 class="hero__title">
+                Unlimited Indian<br>
+                <em>Dining Experience</em>
+            </h1>
+
+            <p class="hero__subtitle">
+                Order from your table. Freshly prepared.<br>
+                Served without limits.
+            </p>
+
+            <p class="hero__badge">
+                <span class="badge-dot"></span>
+                No buffet &nbsp;&middot;&nbsp; Every dish prepared fresh to order
+            </p>
+
+            <div class="hero__actions">
+                <a href="#reservation" class="btn btn--primary">Reserve Table</a>
+                <a href="#menu" class="btn btn--ghost">View Menu</a>
+            </div>
+
+            <p class="hero__urgency">
+                <span class="urgency-pip"></span>
+                Limited seating available
+            </p>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero__scroll" aria-hidden="true">
+            <span class="scroll-line"></span>
+        </div>
+    </section>
+
+
+    <!-- ================================================
+         EXPERIENCE SECTION — How It Works (3 steps)
+    ================================================ -->
+    <section class="experience" id="experience">
+        <div class="container">
+
+            <header class="section-header">
+                <p class="section-label">How It Works</p>
+                <h2 class="section-title">A New Kind of Dining</h2>
+                <p class="section-subtitle">Fine dining meets unlimited freedom — entirely at your pace</p>
+            </header>
+
+            <div class="experience__steps">
+
+                <!-- Step 1 -->
+                <div class="experience__step reveal">
+                    <div class="experience__icon">
+                        <!-- Tablet / menu icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="5" y="2" width="14" height="20" rx="2"/>
+                            <line x1="9" y1="7" x2="15" y2="7"/>
+                            <line x1="9" y1="11" x2="15" y2="11"/>
+                            <line x1="9" y1="15" x2="12" y2="15"/>
+                            <circle cx="12" cy="18.5" r="0.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <span class="experience__num">01</span>
+                    <h3>Browse at Your Table</h3>
+                    <p>Explore our full menu at your leisure. No rush, no pressure — just pure culinary discovery.</p>
+                </div>
+
+                <!-- Connector -->
+                <div class="experience__connector" aria-hidden="true"></div>
+
+                <!-- Step 2 -->
+                <div class="experience__step reveal" style="--reveal-delay: 0.15s">
+                    <div class="experience__icon">
+                        <!-- Infinity / unlimited icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 12c-2-2.5-4-4-6-4a4 4 0 0 0 0 8c2 0 4-1.5 6-4z"/>
+                            <path d="M12 12c2 2.5 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.5-6 4z"/>
+                        </svg>
+                    </div>
+                    <span class="experience__num">02</span>
+                    <h3>Order Unlimited Dishes</h3>
+                    <p>Order as many dishes as you like, whenever you like. Our kitchen is always ready for your next course.</p>
+                </div>
+
+                <!-- Connector -->
+                <div class="experience__connector" aria-hidden="true"></div>
+
+                <!-- Step 3 -->
+                <div class="experience__step reveal" style="--reveal-delay: 0.3s">
+                    <div class="experience__icon">
+                        <!-- Cloche / serve icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M2 14h20"/>
+                            <path d="M12 4a8 8 0 0 1 8 8H4a8 8 0 0 1 8-8z"/>
+                            <line x1="12" y1="4" x2="12" y2="2"/>
+                            <line x1="5" y1="18" x2="19" y2="18"/>
+                        </svg>
+                    </div>
+                    <span class="experience__num">03</span>
+                    <h3>Freshly Served to You</h3>
+                    <p>Every dish is prepared fresh the moment you order and brought directly to your table.</p>
+                </div>
+
+            </div>
+
+            <!-- Trust statement -->
+            <div class="experience__trust reveal" style="--reveal-delay: 0.4s">
+                <div class="trust-line"></div>
+                <p>Unlimited menu access during your entire seating</p>
+                <div class="trust-line"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================================================
+         PRICING SECTION
+    ================================================ -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+
+            <header class="section-header">
+                <p class="section-label">Transparent Pricing</p>
+                <h2 class="section-title">Simple. Unlimited. Exceptional.</h2>
+                <p class="section-subtitle">One fixed price. The entire menu. No surprises.</p>
+            </header>
+
+            <div class="pricing__cards">
+
+                <!-- Lunch card -->
+                <div class="pricing__card reveal">
+                    <p class="pricing__period">Lunch</p>
+                    <p class="pricing__hours">Monday – Sunday &nbsp;&middot;&nbsp; 12:00 – 16:00</p>
+                    <div class="pricing__price">
+                        <sup class="pricing__currency">&euro;</sup>
+                        <span class="pricing__amount">16</span>
+                        <span class="pricing__decimal">.90</span>
+                    </div>
+                    <p class="pricing__per">per person</p>
+                    <ul class="pricing__list">
+                        <li>Full menu access</li>
+                        <li>Unlimited orders throughout seating</li>
+                        <li>Welcome drink included</li>
+                        <li>Attentive table service</li>
+                    </ul>
+                    <a href="#reservation" class="btn btn--outline pricing__btn">Reserve Lunch</a>
+                </div>
+
+                <!-- Dinner card (featured) -->
+                <div class="pricing__card pricing__card--featured reveal" style="--reveal-delay: 0.15s">
+                    <span class="pricing__badge">Most Popular</span>
+                    <p class="pricing__period">Dinner</p>
+                    <p class="pricing__hours">Monday – Sunday &nbsp;&middot;&nbsp; 17:00 – 23:00</p>
+                    <div class="pricing__price">
+                        <sup class="pricing__currency">&euro;</sup>
+                        <span class="pricing__amount">19</span>
+                        <span class="pricing__decimal">.90</span>
+                    </div>
+                    <p class="pricing__per">per person</p>
+                    <ul class="pricing__list">
+                        <li>Full menu access</li>
+                        <li>Unlimited orders throughout seating</li>
+                        <li>Welcome drink included</li>
+                        <li>Attentive table service</li>
+                    </ul>
+                    <a href="#reservation" class="btn btn--primary pricing__btn">Reserve Dinner</a>
+                </div>
+
+            </div>
+
+            <!-- Welcome drink note -->
+            <p class="pricing__note reveal" style="--reveal-delay: 0.25s">
+                &#10022; &nbsp; Free welcome drink included with every seating &nbsp; &#10022;
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- ================================================
+         FOOD SHOWCASE / MENU
+    ================================================ -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <header class="section-header">
+                <p class="section-label">Our Cuisine</p>
+                <h2 class="section-title">Crafted with Tradition</h2>
+                <p class="section-subtitle">Every dish on our menu — available to you, unlimited</p>
+            </header>
+        </div>
+
+        <!-- Category filter -->
+        <div class="menu__filters">
+            <button class="menu__filter active" data-filter="all">All</button>
+            <button class="menu__filter" data-filter="starters">Starters</button>
+            <button class="menu__filter" data-filter="curries">Curries</button>
+            <button class="menu__filter" data-filter="tandoor">Tandoor</button>
+        </div>
+
+        <!-- Photo grid -->
+        <div class="menu__grid" id="menuGrid">
+
+            <div class="menu__item reveal" data-category="starters">
+                <img src="photos/DSC08992 (1).jpg" alt="Assorted starters and small plates" loading="lazy">
+                <div class="menu__item-overlay"></div>
+                <div class="menu__item-content">
+                    <p class="menu__item-category">Starters</p>
+                    <h3 class="menu__item-name">Chef's Selection</h3>
+                    <p class="menu__item-desc">A curated spread of our finest small plates</p>
+                </div>
+            </div>
+
+            <div class="menu__item reveal" data-category="curries" style="--reveal-delay: 0.1s">
+                <img src="photos/DSC09037 (1).jpg" alt="Butter Chicken curry" loading="lazy">
+                <div class="menu__item-overlay"></div>
+                <div class="menu__item-content">
+                    <p class="menu__item-category">Curries</p>
+                    <h3 class="menu__item-name">Butter Chicken</h3>
+                    <p class="menu__item-desc">Slow-cooked tomato &amp; cream, aromatic spices</p>
+                </div>
+            </div>
+
+            <div class="menu__item reveal" data-category="curries" style="--reveal-delay: 0.2s">
+                <img src="photos/DSC08995 (1).jpg" alt="Dal Makhani — creamy black lentils" loading="lazy">
+                <div class="menu__item-overlay"></div>
+                <div class="menu__item-content">
+                    <p class="menu__item-category">Curries</p>
+                    <h3 class="menu__item-name">Dal Makhani</h3>
+                    <p class="menu__item-desc">Black lentils simmered overnight in butter &amp; cream</p>
+                </div>
+            </div>
+
+            <div class="menu__item reveal" data-category="tandoor" style="--reveal-delay: 0.3s">
+                <img src="photos/DSC08837 (1).jpg" alt="Tandoori Chicken from the clay oven" loading="lazy">
+                <div class="menu__item-overlay"></div>
+                <div class="menu__item-content">
+                    <p class="menu__item-category">Tandoor</p>
+                    <h3 class="menu__item-name">Tandoori Chicken</h3>
+                    <p class="menu__item-desc">Marinated 24 hrs, grilled in clay oven at 400°C</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================================================
+         FULL MENU SECTION
+         ─────────────────────────────────────────────
+         HOW TO ADD YOUR MENU:
+
+         OPTION A — Image pages (JPG / PNG):
+           1. Create a folder called "menu" next to index.html
+           2. Export each page of your menu as a JPG or PNG
+           3. Name them: page-1.jpg, page-2.jpg, page-3.jpg …
+           4. Uncomment (or copy) the <div class="fmenu__page"> blocks below
+              and update the src="" to match your filenames.
+
+         OPTION B — PDF:
+           1. Place your PDF inside the "menu" folder: menu/menu.pdf
+           2. The "PDF View" tab will automatically embed it.
+           3. Update the <iframe src=""> and <a href=""> below.
+
+         You can use BOTH options at the same time.
+    ================================================ -->
+    <section class="full-menu" id="full-menu">
+        <div class="container">
+
+            <header class="section-header">
+                <p class="section-label">Browse Our Menu</p>
+                <h2 class="section-title">The Full Menu</h2>
+                <p class="section-subtitle">Every dish available to you — unlimited, freshly prepared to order</p>
+            </header>
+
+            <!-- Tab switcher + download button -->
+            <div class="fmenu__bar">
+                <div class="fmenu__tabs" role="tablist">
+                    <button class="fmenu__tab active" data-tab="images" role="tab" aria-selected="true" aria-controls="tab-images">
+                        <!-- Image icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                        Menu Pages
+                    </button>
+                    <button class="fmenu__tab" data-tab="pdf" role="tab" aria-selected="false" aria-controls="tab-pdf">
+                        <!-- PDF / document icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                        PDF View
+                    </button>
+                </div>
+
+                <!-- Download button — update href to your PDF path -->
+                <a href="menu/menu.pdf" download class="btn btn--outline fmenu__download" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+
+
+            <!-- ── PANEL A: IMAGE PAGES ── -->
+            <div class="fmenu__panel" id="tab-images" role="tabpanel">
+
+                <!--
+                ════════════════════════════════════
+                  ADD YOUR MENU IMAGES BELOW
+                  Copy & paste as many blocks as you need.
+                  Each block = one page of your menu.
+                ════════════════════════════════════
+
+                <div class="fmenu__page reveal" data-index="0">
+                    <img src="menu/page-1.jpg" alt="Menu — Page 1" loading="lazy">
+                    <div class="fmenu__page-footer">
+                        <span class="fmenu__page-label">Page 1</span>
+                        <button class="fmenu__zoom-btn" aria-label="View full size">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/>
+                                <line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="fmenu__page reveal" data-index="1" style="--reveal-delay:0.1s">
+                    <img src="menu/page-2.jpg" alt="Menu — Page 2" loading="lazy">
+                    <div class="fmenu__page-footer">
+                        <span class="fmenu__page-label">Page 2</span>
+                        <button class="fmenu__zoom-btn" aria-label="View full size">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/>
+                                <line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="fmenu__page reveal" data-index="2" style="--reveal-delay:0.2s">
+                    <img src="menu/page-3.jpg" alt="Menu — Page 3" loading="lazy">
+                    <div class="fmenu__page-footer">
+                        <span class="fmenu__page-label">Page 3</span>
+                        <button class="fmenu__zoom-btn" aria-label="View full size">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/>
+                                <line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                -->
+
+                <!-- Grid (populated by the pages above) -->
+                <div class="fmenu__grid" id="fmenuGrid">
+                    <!-- Menu pages go here — uncomment blocks above and move them inside this div -->
+                </div>
+
+                <!-- Empty / placeholder state (hidden once images are added) -->
+                <div class="fmenu__placeholder" id="fmenuPlaceholder">
+                    <div class="fmenu__placeholder-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="8" y="8" width="48" height="48" rx="4"/>
+                            <path d="M8 42l14-14 10 10 8-8 16 16"/>
+                            <circle cx="22" cy="22" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Menu coming soon</h3>
+                    <p>
+                        To display your menu, place your images (JPG / PNG) or a PDF<br>
+                        inside a <code>menu/</code> folder and follow the instructions in the HTML comments above.
+                    </p>
+                    <a href="menu/menu.pdf" target="_blank" class="btn btn--outline" style="margin-top: 24px;">
+                        View PDF Version
+                    </a>
+                </div>
+
+            </div><!-- /tab-images -->
+
+
+            <!-- ── PANEL B: PDF EMBED ── -->
+            <div class="fmenu__panel fmenu__panel--hidden" id="tab-pdf" role="tabpanel">
+                <!--
+                    Update the src below to point to your PDF file.
+                    Recommended path:  menu/menu.pdf
+                -->
+                <div class="fmenu__pdf-wrap">
+                    <iframe
+                        src="menu/menu.pdf"
+                        title="Curry King & Grill — Full Menu"
+                        class="fmenu__iframe"
+                        loading="lazy"
+                    >
+                        <!-- Fallback for browsers that can't embed PDFs -->
+                        <div class="fmenu__pdf-fallback">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                            <p>Your browser can't display PDFs inline.</p>
+                            <a href="menu/menu.pdf" target="_blank" class="btn btn--primary" style="margin-top:16px;">
+                                Open PDF
+                            </a>
+                        </div>
+                    </iframe>
+                </div>
+
+                <div class="fmenu__pdf-actions">
+                    <a href="menu/menu.pdf" target="_blank" class="btn btn--ghost">
+                        Open in new tab
+                    </a>
+                    <a href="menu/menu.pdf" download class="btn btn--primary">
+                        Download PDF
+                    </a>
+                </div>
+            </div><!-- /tab-pdf -->
+
+        </div>
+    </section>
+
+
+    <!-- ================================================
+         AMBIENCE / OUR SPACE
+    ================================================ -->
+    <section class="ambience" id="ambience">
+        <div class="container">
+            <header class="section-header">
+                <p class="section-label">Our Space</p>
+                <h2 class="section-title">The Setting</h2>
+                <p class="section-subtitle">A warm, vibrant atmosphere where every meal becomes an occasion</p>
+            </header>
+        </div>
+
+        <!-- Photo mosaic -->
+        <div class="ambience__mosaic">
+            <!-- Large left -->
+            <div class="ambience__photo ambience__photo--main reveal">
+                <img src="photos/DSC07503 (1) (1).jpg" alt="Main dining room with living plant wall" loading="lazy">
+                <div class="ambience__photo-overlay"></div>
+            </div>
+            <!-- Top centre -->
+            <div class="ambience__photo reveal" style="--reveal-delay: 0.1s">
+                <img src="photos/DSC07465 (1) (1).jpg" alt="Curry King & Grill neon sign" loading="lazy">
+                <div class="ambience__photo-overlay"></div>
+            </div>
+            <!-- Bottom centre -->
+            <div class="ambience__photo reveal" style="--reveal-delay: 0.2s">
+                <img src="photos/DSC07510 (1) (1).jpg" alt="Bar area with marble counter" loading="lazy">
+                <div class="ambience__photo-overlay"></div>
+            </div>
+            <!-- Large right -->
+            <div class="ambience__photo ambience__photo--end reveal" style="--reveal-delay: 0.15s">
+                <img src="photos/DSC07506 (1) (1).jpg" alt="Second dining area with peacock artwork" loading="lazy">
+                <div class="ambience__photo-overlay"></div>
+            </div>
+        </div>
+
+        <!-- Quote -->
+        <div class="container">
+            <blockquote class="ambience__quote reveal" style="--reveal-delay: 0.2s">
+                <p>"From the moment you walk in, you know this is something different."</p>
+                <cite>The Curry King &amp; Grill Experience</cite>
+            </blockquote>
+        </div>
+    </section>
+
+
+    <!-- ================================================
+         RESERVATION SECTION
+    ================================================ -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+
+            <header class="section-header">
+                <p class="section-label">Book Your Table</p>
+                <h2 class="section-title">Reserve Your Experience</h2>
+                <p class="section-subtitle">Limited seating available — secure your table today</p>
+            </header>
+
+            <div class="reservation__wrap">
+
+                <form class="reservation__form" id="reservationForm" novalidate>
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Your full name" autocomplete="name">
+                        <span class="form-error" id="fnameError">Please enter your name.</span>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+34 000 000 000" autocomplete="tel">
+                        <span class="form-error" id="phoneError">Please enter a valid phone number.</span>
+                    </div>
+
+                    <!-- Guests -->
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <div class="select-wrap">
+                            <select id="guests" name="guests">
+                                <option value="" disabled selected>Select guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8+">8+ Guests (call us)</option>
+                            </select>
+                        </div>
+                        <span class="form-error" id="guestsError">Please select number of guests.</span>
+                    </div>
+
+                    <!-- Date -->
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date">
+                        <span class="form-error" id="dateError">Please select a date.</span>
+                    </div>
+
+                    <!-- Time (full width) -->
+                    <div class="form-group form-group--full">
+                        <label for="time">Preferred Time</label>
+                        <div class="select-wrap">
+                            <select id="time" name="time">
+                                <option value="" disabled selected>Select a time slot</option>
+                                <optgroup label="Lunch — 12:00 to 16:00">
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="15:30">15:30</option>
+                                </optgroup>
+                                <optgroup label="Dinner — 17:00 to 23:00">
+                                    <option value="17:00">17:00</option>
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <span class="form-error" id="timeError">Please select a time slot.</span>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn--primary form-group--full reservation__submit">
+                        Confirm Reservation
+                    </button>
+
+                </form>
+
+                <p class="reservation__note">
+                    We will confirm your reservation by phone within 24 hours.<br>
+                    For groups of 8 or more, please call us directly.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================================================
+         FOOTER
+    ================================================ -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__grid">
+
+                <!-- Brand column -->
+                <div class="footer__brand">
+                    <h3 class="footer__logo">Curry King &amp; Grill</h3>
+                    <p class="footer__tagline">
+                        An unlimited Indian dining experience where every dish is freshly prepared and served directly to your table — no buffet, no compromise.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Google Maps">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="footer__col">
+                    <h4>Location</h4>
+                    <ul>
+                        <li>Calle [Street], Malaga</li>
+                        <li>Spain</li>
+                        <li><a href="tel:+34000000000">+34 000 000 000</a></li>
+                        <li><a href="mailto:info@currykingandgrill.com">info@currykingandgrill.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hours -->
+                <div class="footer__col">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li>Monday – Sunday</li>
+                        <li>Lunch: 12:00 – 16:00</li>
+                        <li>Dinner: 17:00 – 23:00</li>
+                        <li class="footer__open-badge">Open 7 days a week</li>
+                    </ul>
+                </div>
+
+                <!-- Quick links -->
+                <div class="footer__col">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="#experience">How It Works</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#ambience">Our Space</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer bottom bar -->
+            <div class="footer__bottom">
+                <p>&copy; 2024 Curry King &amp; Grill. All rights reserved.</p>
+                <p>Malaga's Finest Unlimited Indian Dining</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- ================================================
+         FLOATING RESERVE BUTTON
+    ================================================ -->
+    <button class="float-btn" id="floatBtn" aria-label="Reserve a table">
+        Reserve
+    </button>
+
+
+    <!-- ================================================
+         SUCCESS TOAST
+    ================================================ -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <div class="toast__icon">&#10003;</div>
+        <div>
+            <p class="toast__title">Reservation Requested</p>
+            <p class="toast__desc">We&rsquo;ll confirm by phone within 24 hours.</p>
+        </div>
+    </div>
+
+
+    <!-- ================================================
+         LIGHTBOX MODAL
+         Opens when a menu page thumbnail is clicked.
+         Controlled entirely by script.js.
+    ================================================ -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Menu page viewer" hidden>
+        <!-- Close -->
+        <button class="lightbox__close" id="lightboxClose" aria-label="Close viewer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+
+        <!-- Prev -->
+        <button class="lightbox__nav lightbox__prev" id="lightboxPrev" aria-label="Previous page">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </button>
+
+        <!-- Image stage -->
+        <div class="lightbox__stage">
+            <div class="lightbox__spinner" id="lightboxSpinner" aria-hidden="true"></div>
+            <img class="lightbox__img" id="lightboxImg" src="" alt="" draggable="false">
+        </div>
+
+        <!-- Next -->
+        <button class="lightbox__nav lightbox__next" id="lightboxNext" aria-label="Next page">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+        </button>
+
+        <!-- Counter + page label -->
+        <div class="lightbox__footer">
+            <span class="lightbox__counter" id="lightboxCounter">Page 1 of 1</span>
+        </div>
+    </div>
+    <!-- Lightbox backdrop -->
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
