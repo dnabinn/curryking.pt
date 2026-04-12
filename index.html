@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curry King & Grill — Unlimited Indian Dining</title>
-    <meta name="description" content="Curry King & Grill — Premium unlimited Indian dining in Malaga. Order from your table. Freshly prepared. Served without limits.">
+    <meta name="description" content="Curry King & Grill — Premium unlimited Indian dining in Lisboa. Order from your table. Freshly prepared. Served without limits.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,8 +34,7 @@
             <!-- Nav links -->
             <ul class="nav__links" id="navLinks">
                 <li><a href="#experience" class="nav__link">Experience</a></li>
-                <li><a href="#menu" class="nav__link">Cuisine</a></li>
-                <li><a href="#full-menu" class="nav__link">Full Menu</a></li>
+                <li><a href="#menu" class="nav__link">Menu</a></li>
                 <li><a href="#pricing" class="nav__link">Pricing</a></li>
                 <li><a href="#ambience" class="nav__link">Our Space</a></li>
                 <li><a href="#reservation" class="nav__cta">Reserve Table</a></li>
@@ -61,7 +60,7 @@
 
         <!-- Hero content -->
         <div class="hero__content">
-            <p class="hero__eyebrow">Malaga's Finest Indian Dining</p>
+            <p class="hero__eyebrow">Lisboa's Finest Indian Dining</p>
 
             <h1 class="hero__title">
                 Unlimited Indian<br>
@@ -308,189 +307,6 @@
 
 
     <!-- ================================================
-         FULL MENU SECTION
-         ─────────────────────────────────────────────
-         HOW TO ADD YOUR MENU:
-
-         OPTION A — Image pages (JPG / PNG):
-           1. Create a folder called "menu" next to index.html
-           2. Export each page of your menu as a JPG or PNG
-           3. Name them: page-1.jpg, page-2.jpg, page-3.jpg …
-           4. Uncomment (or copy) the <div class="fmenu__page"> blocks below
-              and update the src="" to match your filenames.
-
-         OPTION B — PDF:
-           1. Place your PDF inside the "menu" folder: menu/menu.pdf
-           2. The "PDF View" tab will automatically embed it.
-           3. Update the <iframe src=""> and <a href=""> below.
-
-         You can use BOTH options at the same time.
-    ================================================ -->
-    <section class="full-menu" id="full-menu">
-        <div class="container">
-
-            <header class="section-header">
-                <p class="section-label">Browse Our Menu</p>
-                <h2 class="section-title">The Full Menu</h2>
-                <p class="section-subtitle">Every dish available to you — unlimited, freshly prepared to order</p>
-            </header>
-
-            <!-- Tab switcher + download button -->
-            <div class="fmenu__bar">
-                <div class="fmenu__tabs" role="tablist">
-                    <button class="fmenu__tab active" data-tab="images" role="tab" aria-selected="true" aria-controls="tab-images">
-                        <!-- Image icon -->
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <rect x="3" y="3" width="18" height="18" rx="2"/>
-                            <circle cx="8.5" cy="8.5" r="1.5"/>
-                            <polyline points="21 15 16 10 5 21"/>
-                        </svg>
-                        Menu Pages
-                    </button>
-                    <button class="fmenu__tab" data-tab="pdf" role="tab" aria-selected="false" aria-controls="tab-pdf">
-                        <!-- PDF / document icon -->
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14 2 14 8 20 8"/>
-                            <line x1="16" y1="13" x2="8" y2="13"/>
-                            <line x1="16" y1="17" x2="8" y2="17"/>
-                            <polyline points="10 9 9 9 8 9"/>
-                        </svg>
-                        PDF View
-                    </button>
-                </div>
-
-                <!-- Download button — update href to your PDF path -->
-                <a href="menu/menu.pdf" download class="btn btn--outline fmenu__download" target="_blank">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                        <polyline points="7 10 12 15 17 10"/>
-                        <line x1="12" y1="15" x2="12" y2="3"/>
-                    </svg>
-                    Download PDF
-                </a>
-            </div>
-
-
-            <!-- ── PANEL A: IMAGE PAGES ── -->
-            <div class="fmenu__panel" id="tab-images" role="tabpanel">
-
-                <!--
-                ════════════════════════════════════
-                  ADD YOUR MENU IMAGES BELOW
-                  Copy & paste as many blocks as you need.
-                  Each block = one page of your menu.
-                ════════════════════════════════════
-
-                <div class="fmenu__page reveal" data-index="0">
-                    <img src="menu/page-1.jpg" alt="Menu — Page 1" loading="lazy">
-                    <div class="fmenu__page-footer">
-                        <span class="fmenu__page-label">Page 1</span>
-                        <button class="fmenu__zoom-btn" aria-label="View full size">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/>
-                                <line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="fmenu__page reveal" data-index="1" style="--reveal-delay:0.1s">
-                    <img src="menu/page-2.jpg" alt="Menu — Page 2" loading="lazy">
-                    <div class="fmenu__page-footer">
-                        <span class="fmenu__page-label">Page 2</span>
-                        <button class="fmenu__zoom-btn" aria-label="View full size">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/>
-                                <line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="fmenu__page reveal" data-index="2" style="--reveal-delay:0.2s">
-                    <img src="menu/page-3.jpg" alt="Menu — Page 3" loading="lazy">
-                    <div class="fmenu__page-footer">
-                        <span class="fmenu__page-label">Page 3</span>
-                        <button class="fmenu__zoom-btn" aria-label="View full size">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/>
-                                <line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                -->
-
-                <!-- Grid (populated by the pages above) -->
-                <div class="fmenu__grid" id="fmenuGrid">
-                    <!-- Menu pages go here — uncomment blocks above and move them inside this div -->
-                </div>
-
-                <!-- Empty / placeholder state (hidden once images are added) -->
-                <div class="fmenu__placeholder" id="fmenuPlaceholder">
-                    <div class="fmenu__placeholder-icon">
-                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <rect x="8" y="8" width="48" height="48" rx="4"/>
-                            <path d="M8 42l14-14 10 10 8-8 16 16"/>
-                            <circle cx="22" cy="22" r="4"/>
-                        </svg>
-                    </div>
-                    <h3>Menu coming soon</h3>
-                    <p>
-                        To display your menu, place your images (JPG / PNG) or a PDF<br>
-                        inside a <code>menu/</code> folder and follow the instructions in the HTML comments above.
-                    </p>
-                    <a href="menu/menu.pdf" target="_blank" class="btn btn--outline" style="margin-top: 24px;">
-                        View PDF Version
-                    </a>
-                </div>
-
-            </div><!-- /tab-images -->
-
-
-            <!-- ── PANEL B: PDF EMBED ── -->
-            <div class="fmenu__panel fmenu__panel--hidden" id="tab-pdf" role="tabpanel">
-                <!--
-                    Update the src below to point to your PDF file.
-                    Recommended path:  menu/menu.pdf
-                -->
-                <div class="fmenu__pdf-wrap">
-                    <iframe
-                        src="menu/menu.pdf"
-                        title="Curry King & Grill — Full Menu"
-                        class="fmenu__iframe"
-                        loading="lazy"
-                    >
-                        <!-- Fallback for browsers that can't embed PDFs -->
-                        <div class="fmenu__pdf-fallback">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                <polyline points="14 2 14 8 20 8"/>
-                            </svg>
-                            <p>Your browser can't display PDFs inline.</p>
-                            <a href="menu/menu.pdf" target="_blank" class="btn btn--primary" style="margin-top:16px;">
-                                Open PDF
-                            </a>
-                        </div>
-                    </iframe>
-                </div>
-
-                <div class="fmenu__pdf-actions">
-                    <a href="menu/menu.pdf" target="_blank" class="btn btn--ghost">
-                        Open in new tab
-                    </a>
-                    <a href="menu/menu.pdf" download class="btn btn--primary">
-                        Download PDF
-                    </a>
-                </div>
-            </div><!-- /tab-pdf -->
-
-        </div>
-    </section>
-
-
-    <!-- ================================================
          AMBIENCE / OUR SPACE
     ================================================ -->
     <section class="ambience" id="ambience">
@@ -562,7 +378,7 @@
                     <!-- Phone -->
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+34 000 000 000" autocomplete="tel">
+                        <input type="tel" id="phone" name="phone" placeholder="+351 000 000 000" autocomplete="tel">
                         <span class="form-error" id="phoneError">Please enter a valid phone number.</span>
                     </div>
 
@@ -657,19 +473,19 @@
                         An unlimited Indian dining experience where every dish is freshly prepared and served directly to your table — no buffet, no compromise.
                     </p>
                     <div class="footer__social">
-                        <a href="#" aria-label="Instagram">
+                        <a href="https://www.instagram.com/currykingngrill/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="2" width="20" height="20" rx="5"/>
                                 <circle cx="12" cy="12" r="4"/>
                                 <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
                             </svg>
                         </a>
-                        <a href="#" aria-label="Facebook">
+                        <a href="https://www.facebook.com/currykingngrill" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                             </svg>
                         </a>
-                        <a href="#" aria-label="Google Maps">
+                        <a href="https://maps.google.com/?q=Avenida+5+de+Outubro+267B,+1600-035+Lisboa" target="_blank" rel="noopener noreferrer" aria-label="Google Maps">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
                                 <circle cx="12" cy="10" r="3"/>
@@ -682,10 +498,9 @@
                 <div class="footer__col">
                     <h4>Location</h4>
                     <ul>
-                        <li>Calle [Street], Malaga</li>
-                        <li>Spain</li>
-                        <li><a href="tel:+34000000000">+34 000 000 000</a></li>
-                        <li><a href="mailto:info@currykingandgrill.com">info@currykingandgrill.com</a></li>
+                        <li>Avenida 5 de Outubro 267B</li>
+                        <li>1600-035 Lisboa, Portugal</li>
+                        <li><a href="tel:+351218241089">21 824 1089</a></li>
                     </ul>
                 </div>
 
@@ -717,7 +532,7 @@
             <!-- Footer bottom bar -->
             <div class="footer__bottom">
                 <p>&copy; 2024 Curry King &amp; Grill. All rights reserved.</p>
-                <p>Malaga's Finest Unlimited Indian Dining</p>
+                <p>Lisboa's Finest Unlimited Indian Dining</p>
             </div>
 
         </div>
@@ -742,49 +557,6 @@
             <p class="toast__desc">We&rsquo;ll confirm by phone within 24 hours.</p>
         </div>
     </div>
-
-
-    <!-- ================================================
-         LIGHTBOX MODAL
-         Opens when a menu page thumbnail is clicked.
-         Controlled entirely by script.js.
-    ================================================ -->
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Menu page viewer" hidden>
-        <!-- Close -->
-        <button class="lightbox__close" id="lightboxClose" aria-label="Close viewer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-                <line x1="18" y1="6" x2="6" y2="18"/>
-                <line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
-        </button>
-
-        <!-- Prev -->
-        <button class="lightbox__nav lightbox__prev" id="lightboxPrev" aria-label="Previous page">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 18 9 12 15 6"/>
-            </svg>
-        </button>
-
-        <!-- Image stage -->
-        <div class="lightbox__stage">
-            <div class="lightbox__spinner" id="lightboxSpinner" aria-hidden="true"></div>
-            <img class="lightbox__img" id="lightboxImg" src="" alt="" draggable="false">
-        </div>
-
-        <!-- Next -->
-        <button class="lightbox__nav lightbox__next" id="lightboxNext" aria-label="Next page">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="9 18 15 12 9 6"/>
-            </svg>
-        </button>
-
-        <!-- Counter + page label -->
-        <div class="lightbox__footer">
-            <span class="lightbox__counter" id="lightboxCounter">Page 1 of 1</span>
-        </div>
-    </div>
-    <!-- Lightbox backdrop -->
-    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
 
 
     <script src="script.js"></script>
