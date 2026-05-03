@@ -5,6 +5,31 @@
 ================================================================ */
 
 /* ----------------------------------------------------------------
+   BLOG CARD REVEAL — CSS-only animation so cards are always
+   visible regardless of JS / IntersectionObserver status.
+   Overrides the generic .reveal class from styles.css.
+---------------------------------------------------------------- */
+@keyframes blogCardIn {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.blog-card.reveal {
+    opacity: 0;
+    transform: none;
+    animation: blogCardIn 0.55s ease forwards;
+    animation-delay: var(--reveal-delay, 0s);
+    transition: none; /* animation handles the motion */
+}
+
+/* Once JS adds .visible, keep it visible (no flash back to 0) */
+.blog-card.reveal.visible {
+    opacity: 1;
+    transform: none;
+    animation: none;
+}
+
+/* ----------------------------------------------------------------
    BLOG LISTING PAGE
 ---------------------------------------------------------------- */
 

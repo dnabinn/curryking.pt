@@ -93,6 +93,14 @@
         revealObserver.observe(el);
     });
 
+    // Fallback: if IntersectionObserver never fires (e.g. hidden iframe,
+    // aggressive browser privacy settings), force-reveal after 900ms.
+    setTimeout(function () {
+        document.querySelectorAll('.reveal:not(.visible)').forEach(function (el) {
+            el.classList.add('visible');
+        });
+    }, 900);
+
 
     /* ----------------------------------------------------------
        4. MENU CATEGORY FILTER
