@@ -21,11 +21,13 @@
 
     function onScroll() {
         const scrolled = window.scrollY > 60;
-        nav.classList.toggle('scrolled', scrolled);
+        if (nav) nav.classList.toggle('scrolled', scrolled);
 
         // Show floating button after scrolling past the hero (roughly 80vh)
-        const heroHeight = window.innerHeight * 0.8;
-        floatBtn.classList.toggle('visible', window.scrollY > heroHeight);
+        if (floatBtn) {
+            const heroHeight = window.innerHeight * 0.8;
+            floatBtn.classList.toggle('visible', window.scrollY > heroHeight);
+        }
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -128,9 +130,11 @@
     /* ----------------------------------------------------------
        5. FLOATING BUTTON — scroll to reservation
     ---------------------------------------------------------- */
-    floatBtn.addEventListener('click', function () {
-        document.getElementById('reservation').scrollIntoView({ behavior: 'smooth' });
-    });
+    if (floatBtn) {
+        floatBtn.addEventListener('click', function () {
+            document.getElementById('reservation').scrollIntoView({ behavior: 'smooth' });
+        });
+    }
 
 
     /* ----------------------------------------------------------
@@ -209,28 +213,30 @@
     });
 
     // Form submit handler
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
 
-        if (!validateAll()) {
-            // Scroll to the first error
-            const firstError = form.querySelector('.has-error');
-            if (firstError) {
-                firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                firstError.focus();
+            if (!validateAll()) {
+                // Scroll to the first error
+                const firstError = form.querySelector('.has-error');
+                if (firstError) {
+                    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstError.focus();
+                }
+                return;
             }
-            return;
-        }
 
-        // Success — show toast and reset form
-        showToast();
-        form.reset();
+            // Success — show toast and reset form
+            showToast();
+            form.reset();
 
-        // Clear all error states after reset
-        Object.keys(validations).forEach(function (fieldId) {
-            setError(fieldId, false);
+            // Clear all error states after reset
+            Object.keys(validations).forEach(function (fieldId) {
+                setError(fieldId, false);
+            });
         });
-    });
+    }
 
 
     /* ----------------------------------------------------------
@@ -239,6 +245,7 @@
     const toast = document.getElementById('toast');
 
     function showToast() {
+        if (!toast) return;
         toast.classList.add('show');
         setTimeout(function () {
             toast.classList.remove('show');
